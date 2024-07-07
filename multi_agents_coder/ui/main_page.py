@@ -2,7 +2,6 @@ import streamlit as st
 from openai import OpenAI
 from sidebar import sidebar
 
-
 # Show title and description.
 st.title("Multi Agents Coder")
 st.write("A team of agents will help you to write code.")
@@ -48,6 +47,7 @@ else:
 
         # Stream the response to the chat using `st.write_stream`, then store it in
         # session state.
+
         with st.chat_message("assistant"):
             response = st.write_stream(stream)
         st.session_state.messages.append(
