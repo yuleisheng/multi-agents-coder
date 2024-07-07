@@ -7,7 +7,9 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">3.9.7,<3.13"
+numpy = "1.26.4"
+pyautogen = "^0.2.32"
 python-dotenv = "^1.0.1"
 streamlit = "^1.36.0"
 openai = "^1.35.10"

@@ -16,8 +16,8 @@ def sidebar():
         api_key_input = st.text_input(
             "OpenAI API Key",
             type="password",
-            placeholder="Paste your OpenAI API key here (sk-...)",
-            help="You can get your API key from https://platform.openai.com/account/api-keys.",
+            placeholder="Paste your OpenAI API key here",
+            help="Get your API key from https://platform.openai.com/account/api-keys",
             value=os.environ.get("OPENAI_API_KEY", None)
             or st.session_state.get("OPENAI_API_KEY", ""),
         )
