@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "multi-agents-coder"
+version = "0.0.1"
+description = "A group of agents that can help you with coding"
+authors = ["yuleisheng <shengyulei@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+streamlit = "^1.36.0"
+openai = "^1.35.10"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
